@@ -75,7 +75,7 @@
 <!-- Topbar End -->
 
 
- <!-- Navbar Start -->
+<!-- Navbar Start -->
 <div class="container-fluid bg-white sticky-top">
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-1">
@@ -567,6 +567,27 @@
         }
     }
 })
+    </script>
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarCollapse = document.querySelector("#navbarCollapse");
+    
+            navbarToggler.addEventListener("click", function () {
+                if (navbarCollapse.classList.contains("show")) {
+                    navbarCollapse.classList.remove("show");
+                } else {
+                    navbarCollapse.classList.add("show");
+                }
+            });
+    
+            const navLinks = document.querySelectorAll(".nav-link");
+            navLinks.forEach(function (navLink) {
+                navLink.addEventListener("click", function () {
+                    navbarCollapse.classList.remove("show");
+                });
+            });
+        });
     </script>
 </body>
 
