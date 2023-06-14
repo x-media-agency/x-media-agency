@@ -614,6 +614,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: 'Montserrat', sans-serif;
+  
   color: var(--color-default);
 }
 
@@ -2129,3 +2130,33 @@ background-color: #000;
 .bg-red-xmedia{
   background-color: #eb3a26;
 }
+
+
+
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as desired */
+  z-index: 1;
+}
+
+.carousel-caption {
+  
+  z-index: 2;
+}
+
+/* body {
+  background-color: #222;
+  color: #fff;
+}
+
+.carousel-caption,
+.carousel-caption p,
+.carousel-caption h1 {
+  color: #fff;
+}  */
