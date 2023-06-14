@@ -37,7 +37,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="dark-mode"> 
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -104,11 +104,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="circle">
-                <a href="ar.html">
+            <div >
+                <a href="ar.html" class="circle">
                     <span class="circle-text">ع</span>
                 </a>
             </div>
+            
         </nav>
     </div>
 </div>
@@ -119,10 +120,27 @@
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
             <div class="carousel-inner" >
-                <div class="carousel-item active justify-content-center" style="width:100%; height: 700px;" >
-                    <video class="video-fluid" autoplay loop muted style="align-content:center ;">
+                <div class="carousel-item active" style="width:100%; height: 700px;">
+                    <img class="w-100" src="assets/img/567.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-7 text-end">
+                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>X-Media</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Bringing Your Vision to Life</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item  justify-content-center" style="width:100%; height: 700px;" >
+                    <!-- <video class="video-fluid" autoplay loop muted style="align-content:center ;">
                         <source src="img/caorusel.mp4" type="video/mp4">
-                    </video>
+                    </video> -->
+                    <img class="w-100" src="assets/img/234.jpg" alt="Image">
 
                     <div class="carousel-caption">
                         <div class="container">
@@ -138,17 +156,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item " style="width:100%; height: 700px;">
-                    <video class="video-fluid" autoplay loop muted style="align-content:center ;">
-                        <source src="img/carousel 2.mp4" type="video/mp4">
-                    </video>
+
+                <div class="carousel-item  justify-content-center" style="width:100%; height: 700px;" >
+                    <!-- <video class="video-fluid" autoplay loop muted style="align-content:center ;">
+                        <source src="img/caorusel.mp4" type="video/mp4">
+                    </video> -->
+                    <img class="w-100" src="assets/img/ASa21.jpg" alt="Image">
+
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>X-Media</strong>
+                                    <p class="fs-4 text-white animated slideInLeft">Crafting Spectacular 
+                                        <strong>Moments</strong>
                                     </p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Bringing Your Vision to Life</h1>
+                                    <h1 class="display-1 text-white mb-4 animated slideInLeft">Let Our Events Ignite Your Imagination</h1>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item  justify-content-center" style="width:100%; height: 700px;" >
+                    <video class="video-fluid" autoplay loop muted style="align-content:center ;">
+                        <source src="img/caorusel.mp4" type="video/mp4">
+                    </video>
+                    
+
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <p class="fs-4 text-white animated slideInRight">Unleashing Extraordinary 
+                                        <strong>Experiences</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-4 animated slideInRight">Where Imagination Meets Execution</h1>
                                     
                                 </div>
                             </div>
@@ -246,9 +289,9 @@
 			</div>
 
 			<div class="col-lg-3 stats">
-				<i class="fa fa-coffee" aria-hidden="true"></i>
-				<div class="counting text-white" data-count="999">0</div>
-				<h5 class="text-white stats-text">Other</h5>
+				<i class="fa fa-history" aria-hidden="true"></i>
+				<div class="counting text-white" data-count="+3">0</div>
+				<h5 class="text-white stats-text">Years of Experience</h5>
 			</div>
 
 
@@ -279,8 +322,8 @@
                                     <img class="img-fluid" src="img/icon/planning.png" alt="Icon">
                                 </div>
                                 <h5 class="mb-3">Planning</h4>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                        stet</p>
+                                    <p class="mb-0">
+                                        Expert planning services that bring your vision to life, delivering unforgettable experiences with great attention to detail</p>
                             </div>
                             
                         </div>
@@ -293,8 +336,7 @@
                                     <img class="img-fluid" src="img/icon/design.png" alt="Icon">
                                 </div>
                                 <h5 class="mb-3">Design</h4>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                        stet</p>
+                                    <p class="mb-0">Transforming ideas into captivating event designs, creating immersive experiences that leave a lasting impression</p>
                             </div>
                             
                         </div>
@@ -307,8 +349,7 @@
                                     <img class="img-fluid" src="img/icon/production.png" alt="Icon">
                                 </div>
                                 <h5 class="mb-3">Production</h4>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                        stet</p>
+                                    <p class="mb-0">From concept to execution, we deliver seamless event production, crafting extraordinary experiences that leave a lasting impact</p>
                             </div>
                             
                         </div>
@@ -321,8 +362,7 @@
                                     <img class="img-fluid" src="img/icon/socialmedia.png" alt="Icon">
                                 </div>
                                 <h5 class="mb-3">Social Marketing</h4>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                        stet</p>
+                                    <p class="mb-0">Igniting online engagement, our social media services elevate events with captivating content and strategic audience reach</p>
                             </div>
                             
                         </div>
@@ -335,8 +375,7 @@
                                     <img class="img-fluid" src="img/icon/b2b.png" alt="Icon">
                                 </div>
                                 <h5 class="mb-3">B2B Marketing</h4>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                        stet</p>
+                                    <p class="mb-0">Driving business growth through strategic B2B marketing, we deliver impactful campaigns that maximize brand exposure and generate valuable connections</p>
                             </div>
                             
                         </div>
@@ -349,8 +388,7 @@
                                     <img class="img-fluid" src="img/icon/email.png" alt="Icon">
                                 </div>
                                 <h5 class="mb-3">E-mail Marketing</h4>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                        stet</p>
+                                    <p class="mb-0">Leveraging the power of e-mail marketing, we create compelling campaigns that engage audiences, drive conversions, and nurture lasting relationships</p>
                             </div>
                             
                         </div>
@@ -376,7 +414,7 @@
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="project-item mb-5">
                     <div class="position-relative">
-                        <img class="img-fluid" src="assets/img/gallery/gallery-1.jpg" alt="">
+                        <img class="img-fluid" src="assets/img/gallery/1.jpg" alt="">
                         <div class="project-overlay">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="assets/img/gallery/gallery-1.jpg"
                                 data-lightbox="project"><i class="fa fa-eye"></i></a>
@@ -387,7 +425,7 @@
                 </div>
                 <div class="project-item mb-5">
                     <div class="position-relative">
-                        <img class="img-fluid" src="assets/img/gallery/gallery-2.jpg" alt="">
+                        <img class="img-fluid" src="assets/img/gallery/2.jpg" alt="">
                         <div class="project-overlay">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="assets/img/gallery/gallery-2.jpg"
                                 data-lightbox="project"><i class="fa fa-eye"></i></a>
@@ -398,7 +436,7 @@
                 </div>
                 <div class="project-item mb-5">
                     <div class="position-relative">
-                        <img class="img-fluid" src="assets/img/gallery/gallery-3.jpg" alt="">
+                        <img class="img-fluid" src="assets/img/gallery/3.jpg" alt="">
                         <div class="project-overlay">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="assets/img/gallery/gallery-3.jpg"
                                 data-lightbox="project"><i class="fa fa-eye"></i></a>
@@ -409,7 +447,7 @@
                 </div>
                 <div class="project-item mb-5">
                     <div class="position-relative">
-                        <img class="img-fluid" src="assets/img/gallery/gallery-4.jpg" alt="">
+                        <img class="img-fluid" src="assets/img/gallery/4.jpg" alt="">
                         <div class="project-overlay">
                             <a class="btn btn-lg-square btn-light rounded-circle m-1" href="assets/img/gallery/gallery-4.jpg"
                                 data-lightbox="project"><i class="fa fa-eye"></i></a>
@@ -486,8 +524,8 @@
                     <a class="btn btn-link" href="#about">About Us</a>
                     <a class="btn btn-link" href="#contact">Contact Us</a>
                     <a class="btn btn-link" href="#services">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
+                    <!-- <a class="btn btn-link" href="">Support</a> -->
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Business Hours</h4>
