@@ -85,66 +85,79 @@
         }
     });
 
-    /**start */
-// number count for stats, using jQuery animate
-
-$('.counting').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-    
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
+ // Function to start counting
+const startCounting = () => {
+    $('.counting').each(function() {
+      const $this = $(this);
+      const countTo = $this.attr('data-count');
   
-    {
-  
-      duration: 3000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-        //alert('finished');
-      }
-  
-    });  
-    
-  
-  });
-
-    // Initialize Swiper
-    var gallerySwiper = new Swiper('.gallery-slider', {
-        slidesPerView: 3, // Number of slides to show in the viewport
-        spaceBetween: 30, // Space between slides
-        navigation: {
-        nextEl: '.swiper-button-next', // Add navigation buttons if needed
-        prevEl: '.swiper-button-prev',
+      $({ countNum: $this.text() }).animate(
+        {
+          countNum: countTo
         },
-        pagination: {
-        el: '.swiper-pagination', // Add pagination bullets if needed
-        clickable: true,
-        },
-  });
-
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+        {
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
         }
+      );
+    });
+  };
+  
+  // Get the counter section element
+  const counterSection = document.getElementById('counter-stats');
+  
+  // Create a new intersection observer
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      // When the counter section is in view
+      if (entry.isIntersecting) {
+        startCounting();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  
+  // Start observing the counter section
+  observer.observe(counterSection);
+  
+  // Your existing code for Swiper and Owl Carousel goes here
+  var gallerySwiper = new Swiper('.gallery-slider', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
     }
-})
-
-
+  });
+  
+  
 
     
 })(jQuery);
